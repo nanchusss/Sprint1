@@ -2,6 +2,7 @@
   background-color: rgb(228, 221, 221);
   margin: 10px;
   padding: 0px;
+  max-width: 1200px;
 }
 
 .contenedor {
@@ -10,16 +11,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  /* grid-template-areas: "container-1"
-                      " madrelarga";
-    align-items: center; */
+ 
 }
 .container-1 {
-  /*     
-    padding: 10px;
-    width: 90%;
-    max-width:1000px;
-    margin: 20px auto; */
+ 
   display: grid;
   grid-gap: 0px;
   grid-template-columns: 1fr 2fr 1fr;
@@ -28,10 +23,13 @@
   grid-template-areas:
     " one two three"
     " larga larga larga";
-  /* /* justify-content: space-between;
-    align-content: space-between;
-
-    align-items: center; */
+ 
+}
+.one,
+.two,
+.three{
+    height: 23px;
+    margin:15px;
 }
 
 .one,
@@ -39,19 +37,18 @@
 .three,
 .madrelarga,
 .amna {
-  /* margin: 10px; */
-  /* grid-area: one; */
+ 
   background: orange;
-  min-height: 20px;
-  /* justify-self: stretch; */
-  /* align-self: center; */
+  
+  
 }
 
 .larga {
+    margin: 15px;
   grid-area: larga;
   background: yellow;
   min-height: 20px;
-  /* margin: 20px; */
+ 
 }
 
 .container-2 {
@@ -67,17 +64,19 @@
   grid-area: rojo;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 2fr;
-
+  grid-gap:10px;
   background: red;
-  height: 85%;
+  height: auto;
 }
+
 .am,
 .am1 {
   display: grid;
   background: yellow;
-  height: 60%;
+  height:90%;
   align-self: start;
 }
+
 
 .gris {
   background: grey;
@@ -105,12 +104,15 @@
 .celeste3 {
   background: rgb(41, 146, 238);
 }
+
 .container-3 {
   display: grid;
   grid-template-columns: 1fr;
   background: black;
   height: 40px;
 }
+
+/* Responsive para Tablet */
 
 @media screen and (max-width: 1004px) {
   .container-2 {
@@ -122,14 +124,16 @@
   }
 }
 
+/* Responsive para Mobile */
+
 @media screen and (max-width: 520px) {
   .contenedor {
-    height: 500px;
+    height: 450px;
     padding: 20px;
   }
   .container-1 {
     margin: 20px;
-    height: 240px;
+    height: auto;
     padding: 30px;
     grid-gap: 10px;
     grid-template-columns: 1fr;
@@ -144,7 +148,7 @@
   .one,
   .two,
   .three {
-    height: 45px;
+    height: 37px;
     background: rgb(240, 77, 99);
   }
   .madrelarga {
@@ -157,7 +161,7 @@
   .larga {
     margin: 15px;
     background: rgb(244, 207, 98);
-    height: 45px;
+    height: 35px;
   }
 
   .container-2 {
@@ -172,32 +176,33 @@
   .gris {
     margin: 30px;
     background: rgb(46, 98, 154);
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: (1,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-template-areas:
-      "celeste"
+      "celeste4"
       "celeste1"
       "celeste2"
       "celeste3"
-      "celeste4";
+      "celeste4"; 
   }
 
-  /* .celeste,
+   .celeste,
   .celeste1,
   .celeste2,
   .celeste3,
   .celeste4 {
     margin: 20px;
-    height: 25px;
+    height: 10px;
     margin: 15px;
     padding: 10px;
     background: white;
-  } */
+    
+  } 
 
   .rojo {
     background: rgb(236, 140, 75);
     height: 100px;
-    padding: 20px;
+    padding: 25px;
     margin: 5px 30px 30px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -209,7 +214,7 @@
     height: 10px;
     margin: 10px;
     padding: 10px;
-    grid-gap: 10px;
+    grid-gap: 15px;
     background: rgb(241, 193, 90);
   }
   .container-3 {
