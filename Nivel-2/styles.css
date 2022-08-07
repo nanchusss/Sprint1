@@ -121,12 +121,41 @@ color:rgb(211, 209, 60);
     background: rgb(225, 222, 222);
     padding: 15px;
     font-size:medium;
+    
    
 }
 
 .section1{
     grid-area: section1;
     
+}
+.section1 p{
+    grid-template-columns: 1fr 1fr;
+    column-count:2;
+    column-gap: 5px;
+    margin:5px;
+
+}
+.section2 p{
+    grid-template-columns: 1fr 1fr;
+    column-count:2;
+    column-gap: 5px;
+    margin:5px;
+
+}
+.section3 p{
+    grid-template-columns: 1fr 1fr;
+    column-count:2;
+    column-gap: 5px;
+    margin:5px;
+
+}
+.section4 p{
+    grid-template-columns: 1fr 1fr;
+    column-count:2;
+    column-gap: 5px;
+    margin:5px;
+
 }
 
 .section2{
@@ -151,6 +180,9 @@ color:rgb(211, 209, 60);
    
     grid-area: footer;
     justify-items: center;
+    background: rgb(225, 222, 222);
+    padding: 15px;
+    font-size:medium;
 }
 
 @media screen and (max-width: 768px) {
