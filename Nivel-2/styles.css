@@ -27,39 +27,15 @@
     background-image: url(./images/header.jpg);
     display:flex;
     justify-self: center;
-    width:1180px;
-    height: 1000px;
+    width:100%;
+    height: 700px;
     background-position:center;
     background-repeat: no-repeat;
     grid-area: header;
     
 
 }
-/* .text-sakura{
-position:absolute;
-top:174%;
-left: 3%;
-color:rgb(211, 209, 60);
 
-}
-.text-noche{
-    position: absolute;
-    top:187%;
-    color:rgb(211,209,60);
-    left: 38%
-}
-.text-turismo{
-    position:absolute;
-    top:277%;
-    left: 5%;
-    color:rgb(211, 209, 60); 
-}
-.text-comida{
-    position: absolute;
-    top:277%;
-    color:rgb(211,209,60);
-    left: 38%
-} */
 
 .h2{
     
@@ -67,7 +43,7 @@ color:rgb(211, 209, 60);
     color: orange;
     position:absolute;
     opacity: 60%;   
-    top:95%;
+    top:65%;
     left: 20%;
     
 }
@@ -87,7 +63,7 @@ color:rgb(211, 209, 60);
     grid-gap: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 300px ;
-    grid-template-rows: 7fr 2fr 2fr 2fr 2fr 50px 1fr;
+    grid-template-rows: 4fr 2fr 2fr 2fr 2fr 50px 1fr;
     grid-template-areas: "header header header"
                          "section1 section2 sidebar"
                          "section1 section2 sidebar"
