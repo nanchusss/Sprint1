@@ -173,6 +173,7 @@ color:rgb(211, 209, 60);
 
 .sidebar{
     grid-area: sidebar;
+    margin: 5px;
   
 }
 
@@ -183,6 +184,13 @@ color:rgb(211, 209, 60);
     background: rgb(225, 222, 222);
     padding: 15px;
     font-size:medium;
+}
+.text-comida,
+.text-turismo,
+.text-cultura,
+.text-noche,
+.text-sakura{
+    color:orange;
 }
 
 @media screen and (max-width: 768px) {
