@@ -28,12 +28,15 @@
     display:flex;
     justify-self: center;
     width:100%;
-    height: 700px;
+    height: 500px;
     background-position:center;
     background-repeat: no-repeat;
     grid-area: header;
     
 
+}
+.fa-brands fa-instagram{
+    justify-self: left;
 }
 
 
@@ -43,8 +46,8 @@
     color: orange;
     position:absolute;
     opacity: 60%;   
-    top:65%;
-    left: 20%;
+    top:48%;
+    left: 21%;
     
 }
 
@@ -63,7 +66,7 @@
     grid-gap: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 300px ;
-    grid-template-rows: 4fr 2fr 2fr 2fr 2fr 50px 1fr;
+    grid-template-rows: 3fr 2fr 2fr 2fr 2fr 50px 1fr;
     grid-template-areas: "header header header"
                          "section1 section2 sidebar"
                          "section1 section2 sidebar"
@@ -76,7 +79,7 @@
 .title{
     background:rgb(218, 114, 130);
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 10px;
 }
 .nuevo{
@@ -149,7 +152,8 @@
 
 .sidebar{
     grid-area: sidebar;
-    margin: 5px;
+    margin: 3px;
+    text-align: center;
   
 }
 
@@ -160,6 +164,7 @@
     background: rgb(225, 222, 222);
     padding: 15px;
     font-size:medium;
+    height: 40px;
 }
 .text-comida,
 .text-turismo,
@@ -171,23 +176,36 @@
 
 @media screen and (max-width: 768px) {
 
-   
+   .header{
+    width: 700px;
+    height: auto;
+   }
 
     .container{
         
        
         grid-template-columns: 2fr 2fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1 fr 1fr 1fr;
         grid-template-areas: "header header"
                              "section1 section2"
                               "section3 section4 "
+                              "nuevo nuevo"
                               "sidebar  sidebar"
                              "footer footer ";
         
     }
     .sidebar{
         background:pink;
+        height:200px;
+        margin: 10px;
 
+    }
+    .nuevo{
+        height: 40px;
+    }
+    .footer{
+        height: 100px;
+        margin: 0px;
     }
     
 }
